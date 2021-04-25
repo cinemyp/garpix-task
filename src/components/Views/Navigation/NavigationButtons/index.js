@@ -3,11 +3,13 @@ import style from "./style.module.scss";
 
 const NavigationButtons = ({ menuItems }) => {
   return (
-    <div className={style["navigation_buttons"]}>
+    <nav className={style["navigation_buttons"]}>
       {menuItems.map((item, index) => (
-        <NavigationButton key={index}>{item}</NavigationButton>
+        <NavigationButton to={item.to} key={index}>
+          {item.title}
+        </NavigationButton>
       ))}
-    </div>
+    </nav>
   );
 };
 

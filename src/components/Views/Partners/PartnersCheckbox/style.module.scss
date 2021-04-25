@@ -1,0 +1,15 @@
+.partners_checkbox {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 380px;
+  text-align: center;
+  margin-top: 15px;
+  .partners_checkbox__text {
+    width: 90px;
+    margin: 10px;
+  }
+  .partners_checkbox__text--green {
+    color: #00d36d;
+  }
+}
