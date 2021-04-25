@@ -5,9 +5,7 @@ const NavigationButtons = ({ menuItems }) => {
   return (
     <div className={style["navigation_buttons"]}>
       {menuItems.map((item, index) => (
-        <NavigationButton to={item.link} key={index}>
-          {item.title}
-        </NavigationButton>
+        <NavigationButton key={index}>{item}</NavigationButton>
       ))}
     </div>
   );
