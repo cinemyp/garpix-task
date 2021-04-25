@@ -1,0 +1,29 @@
+.navigation_menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .navigation_menu_button {
+    background-color: white;
+    outline: none;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: rgb(240, 237, 237);
+      border-radius: 30px;
+    }
+  }
+  .navigation_menu_login {
+    background-color: white;
+    border-color: #00d36d;
+    color: #00d36d;
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    margin-left: 5px;
+  }
+}
