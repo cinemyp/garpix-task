@@ -1,7 +1,11 @@
-import Button from "../Button";
+import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 
-const NavigationButton = ({ children }) => {
-  return <Button className={style["navigation_button"]}>{children}</Button>;
+const NavigationButton = ({ to, children }) => {
+  return (
+    <Link to={to} className={style["navigation_button"]}>
+      {children}
+    </Link>
+  );
 };
 export default NavigationButton;

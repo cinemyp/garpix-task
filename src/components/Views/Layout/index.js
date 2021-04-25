@@ -1,7 +1,12 @@
 import NavigationContainer from "../../Containers/NavigationContainer";
 
-const Layout = () => {
-  return <NavigationContainer />;
+const Layout = ({ children }) => {
+  return (
+    <>
+      <NavigationContainer />
+      {children}
+    </>
+  );
 };
 
 export default Layout;
