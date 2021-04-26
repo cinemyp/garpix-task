@@ -7,8 +7,9 @@ import euro from "../components/Views/Partners/assets/euro.svg";
 import technoOffer from "../components/Views/Offers/assets/technoOffer.svg";
 import technoSmallLogo from "../components/Views/Offers/assets/technoSmallLogo.svg";
 
-export const NAVIGATION_DATA = [
+import five from "../components/Views/Bar/assets/five.svg";
 
+export const NAVIGATION_DATA = [
   { title: "Купоны и сертификаты", to: "/coupons" },
   { title: "Впечатления", to: "/impressions" },
   { title: "Авиабилеты", to: "/air" },
@@ -22,18 +23,17 @@ export const NAVIGATION_DATA = [
 ];
 
 export const PARTNERS_FILTER = [
-  { title: "Все партнеры", to: "/all" },
-  { title: "Популярное", to: "/popular" },
-  { title: "Супермаркеты", to: "/supermarkets" },
-  { title: "Кафе и рестораны", to: "/cafes" },
-  { title: "Такси", to: "/taxi" },
-  { title: "Красота", to: "/beauty" },
-  { title: "Электроника и бытовая техника", to: "/electronics" },
-  { title: "Зоотовары", to: "/petsupplies" },
-  { title: "Кино и театр", to: "/theaters" },
-  { title: ". . .", to: "/etc" },
+  { title: "Все партнеры", value: "all" },
+  { title: "Популярное", value: "popular" },
+  { title: "Супермаркеты", value: "supermarkets" },
+  { title: "Кафе и рестораны", value: "cafes" },
+  { title: "Такси", value: "taxi" },
+  { title: "Красота", value: "beauty" },
+  { title: "Электроника и бытовая техника", value: "electronics" },
+  { title: "Зоотовары", value: "petsupplies" },
+  { title: "Кино и театр", value: "theaters" },
+  { title: ". . .", value: "etc" },
 ];
-
 
 export const PARTNERS_DATA = [
   {
@@ -110,5 +110,44 @@ export const OFFERS_DATA = [
     smallLogo: technoSmallLogo,
     companyName: "Технопарк",
     offer: "20% спасибо за технику Electrolux",
+  },
+];
+
+export const CARDSBAR_DATA = [
+  {
+    data: [
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+    ],
+    description: "Скидки за бонусы",
+  },
+  {
+    data: [
+      { logo: five, percent: "3%" },
+      { logo: five, percent: "1.5%" },
+      { logo: five, percent: "1.5%" },
+    ],
+    description: "Большой % начисления",
+  },
+  {
+    data: [
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+    ],
+    description: "Выгодные купоны",
+  },
+  {
+    data: [
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+      { logo: five, percent: "" },
+    ],
+    description: "Персональное исходя из трат",
   },
 ];
