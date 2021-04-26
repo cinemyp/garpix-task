@@ -1,9 +1,19 @@
 import HeaderTitle from "../HeaderTitle";
 import PartnersButtons from "./PartnersButtons";
+import PartnersCards from "./PartnersCards";
 import PartnersCheckbox from "./PartnersCheckbox";
 import style from "./style.module.scss";
+import EtcButton from "../EtcButton";
 
-const Partners = ({ menuItems, onClickPartner, active }) => {
+const Partners = ({
+  menuItems,
+  onClickPartner,
+  active,
+  partnersData,
+  etcText,
+  onClickEtc,
+  activeEtc,
+}) => {
   return (
     <div className={style["partners"]}>
       <HeaderTitle
@@ -16,6 +26,8 @@ const Partners = ({ menuItems, onClickPartner, active }) => {
         active={active}
       />
       <PartnersCheckbox />
+      <PartnersCards partnersData={partnersData} />
+      <EtcButton onClickEtc={onClickEtc} etcText={etcText} active={activeEtc} />
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import Button from "../Button";
-import { ReactComponent as GeoSVG } from "../../../assets/geo.svg";
+import Button from "../../Button";
+import { ReactComponent as GeoSVG } from "../assets/geo.svg";
 
 import style from "./style.module.scss";
 

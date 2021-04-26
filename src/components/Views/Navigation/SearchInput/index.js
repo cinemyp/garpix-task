@@ -1,6 +1,7 @@
 import classNames from "classnames";
-import Button from "../Button";
-import { ReactComponent as SearchSVG } from "../../../assets/search.svg";
+import Button from "../../Button";
+
+import { ReactComponent as SearchSVG } from "../assets/search.svg";
 
 import style from "./style.module.scss";
 

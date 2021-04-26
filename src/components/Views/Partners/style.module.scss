@@ -1,7 +1,7 @@
+@import "../const.module.scss/";
+
 .partners {
-  background-color: #f2f4f7;
-  margin: 0 auto;
-  text-align: center;
+  @extend %layout;
   .partners__header {
     margin-top: 15px;
     margin-bottom: 25px;

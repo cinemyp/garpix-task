@@ -1,0 +1,41 @@
+.product_card {
+  width: 218px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+  .header {
+    text-align: left;
+    .header__title {
+      margin: 0;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .header__text {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 15px;
+      color: #d4d3d3;
+    }
+  }
+  .content {
+    margin-top: 27px;
+    .content__company_logo {
+      width: 120px;
+      height: 120px;
+    }
+    .content__company_name {
+      margin-top: 35px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #a8a8a8;
+    }
+  }
+}

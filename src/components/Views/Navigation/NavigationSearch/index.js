@@ -1,5 +1,5 @@
 import NavigationMenu from "../NavigationMenu";
-import GeoLocation from "../../GeoLocation";
+import GeoLocation from "../GeoLocation";
 
 import style from "./style.module.scss";
 
