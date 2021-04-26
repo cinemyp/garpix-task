@@ -1,6 +1,6 @@
-import Button from "../Button";
+import Button from "../../Button";
 
-import { ReactComponent as SearchSVG } from "../../../assets/search.svg";
+import { ReactComponent as SearchSVG } from "../assets/search.svg";
 import style from "./style.module.scss";
 
 const NavigationMenu = ({ onClickSearch }) => {

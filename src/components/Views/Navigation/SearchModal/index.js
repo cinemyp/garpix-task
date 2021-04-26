@@ -1,3 +1,4 @@
+import SearchInput from "../SearchInput";
 import Modal from "../../Modal";
 
 const SearchModal = ({ active, onCloseModal }) => {
