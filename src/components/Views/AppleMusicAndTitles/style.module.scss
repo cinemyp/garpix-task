@@ -1,0 +1,22 @@
+@import "../const.module.scss";
+
+.content_kupons {
+  @extend %layout;
+  .content_kupons_header {
+    margin: 0 auto;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 220px;
+  }
+}
+
+.content_kupons__title {
+    @extend %layout;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }

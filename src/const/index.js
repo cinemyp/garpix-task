@@ -4,12 +4,16 @@ import techno from "../components/Views/Partners/assets/techno.svg";
 import bork from "../components/Views/Partners/assets/bork.svg";
 import euro from "../components/Views/Partners/assets/euro.svg";
 
+import logoMetro1 from "../components/Views/MapOblast/assets/logoMetro1.svg"
+import logoMetro2 from "../components/Views/MapOblast/assets/logoMetro2.svg"
+import AppleMusicLogo from "../components/Views/MapOblast/assets/AppleMusicLogo.svg"
+
 import technoOffer from "../components/Views/Offers/assets/technoOffer.svg";
 import technoSmallLogo from "../components/Views/Offers/assets/technoSmallLogo.svg";
 
 export const NAVIGATION_DATA = [
 
-  { title: "Купоны и сертификаты", to: "/coupons" },
+  { title: "Купоны и сертификаты", to: "/kupons" },
   { title: "Впечатления", to: "/impressions" },
   { title: "Авиабилеты", to: "/air" },
   { title: "Ж/д билеты", to: "/railway" },
@@ -33,7 +37,47 @@ export const PARTNERS_FILTER = [
   { title: "Кино и театр", to: "/theaters" },
   { title: ". . .", to: "/etc" },
 ];
+export const APPLENUSIC_DATA =[
+  {
+    logo:AppleMusicLogo,
+    title:"Москва, ул. Большая Татарская, 21",
+    metro1:"Маяковская",
+    logoMetro1:logoMetro1,
+    metro2:"Лубянка",
+    logoMetro2:logoMetro2,
+    telefon:"+7 495 220-30-44",
+    vremya:"Ежедневно с 9:00 до 21:00",
+    adress:'apple.com',
+    marshrut:'Проложить маршрут'
 
+  },
+  {
+    logo:AppleMusicLogo,
+    title:"Москва, ул. Большая Татарская, 21",
+    metro1:"Маяковская",
+    logoMetro1:logoMetro1,
+    metro2:"Лубянка",
+    logoMetro2:logoMetro2,
+    telefon:"+7 495 220-30-44",
+    vremya:"Ежедневно с 9:00 до 21:00",
+    adress:'apple.com',
+    marshrut:'Проложить маршрут'
+
+  },
+  {
+    logo:AppleMusicLogo,
+    title:"Москва, ул. Большая Татарская, 21",
+    metro1:"Маяковская",
+    logoMetro1:logoMetro1,
+    metro2:"Лубянка",
+    logoMetro2:logoMetro2,
+    telefon:"+7 495 220-30-44",
+    vremya:"Ежедневно с 9:00 до 21:00",
+    adress:'apple.com',
+    marshrut:'Проложить маршрут'
+
+  }
+]
 
 export const PARTNERS_DATA = [
   {
