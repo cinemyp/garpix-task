@@ -1,0 +1,17 @@
+.button_geo_location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  outline: none;
+  border: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  .button_geo_location__city {
+    color: #9e9d9d;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}

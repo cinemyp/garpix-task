@@ -4,14 +4,14 @@ import { useState } from "react";
 
 const NavigationContainer = () => {
   const handleClickSearch = () => {
-    setActive(true);
+    setOpenModal(true);
   };
   const handleCloseModal = (e) => {
     const isModalClick = e.target.type;
-    if (!isModalClick) setActive(false);
+    if (!isModalClick) setOpenModal(false);
   };
   const handleSelectCity = () => {};
-  const [active, setActive] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   const city = "Санкт-Петербург";
 
   return (
@@ -21,7 +21,7 @@ const NavigationContainer = () => {
       onSelectCity={handleSelectCity}
       onCloseModal={handleCloseModal}
       city={city}
-      active={active}
+      active={openModal}
     />
   );
 };

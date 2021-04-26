@@ -1,9 +1,7 @@
-import { ReactComponent as SberLogoSVG } from "../../../assets/sberLogo.svg";
-
-const HeaderLogo = () => {
+const HeaderLogo = ({ logo }) => {
   return (
     <div className="logo">
-      <SberLogoSVG />
+      <img src={logo} />
     </div>
   );
 };
