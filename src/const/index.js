@@ -8,19 +8,7 @@ import technoOffer from "../components/Views/Offers/assets/technoOffer.svg";
 import technoSmallLogo from "../components/Views/Offers/assets/technoSmallLogo.svg";
 
 export const NAVIGATION_DATA = [
-<<<<<<< HEAD
-  "Купоны и сертификаты",
-  "Впечатления",
-  "Авиабилеты",
-  "Ж/д билеты",
-  "Отели",
-  "Каршеринг",
-  "Театры",
-  "Страхование",
-  "Как подключиться",
-  "Партнеры",
-];
-=======
+
   { title: "Купоны и сертификаты", to: "/coupons" },
   { title: "Впечатления", to: "/impressions" },
   { title: "Авиабилеты", to: "/air" },
@@ -45,6 +33,7 @@ export const PARTNERS_FILTER = [
   { title: "Кино и театр", to: "/theaters" },
   { title: ". . .", to: "/etc" },
 ];
+
 
 export const PARTNERS_DATA = [
   {
@@ -123,4 +112,3 @@ export const OFFERS_DATA = [
     offer: "20% спасибо за технику Electrolux",
   },
 ];
->>>>>>> c3973436f8d09b23e70cd19e6be39f340a521942

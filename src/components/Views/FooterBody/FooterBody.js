@@ -5,11 +5,11 @@ import FooterPrivacyPolicy from "../../Footer/FooterPrivacyPolicy/FooterPrivacyP
 import Typography from "@material-ui/core/Typography";
 import FooterLogoSber from "../FooterLogos/FooterLogoSber";
 import FooterButtonsDownload from "../FooterButtonsDovnload";
-import NavigationButtons from "../NavigationButtons";
 import style from "./style.module.scss";
 import FooterInfo from "../FooterInfo/FooterInfo";
 import FooterButtonsSocial from "../FooterButtonsSocial";
 import FooterButtons from "../FooterButtons";
+import NavigationButtons from "../Navigation/NavigationButtons";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 3,
@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
 const FooterBody = ({ data }) => {
   const classes = useStyles();
   return (
+    <>
     <div className={style["footer_body"]}>
+      <footer>
       <div className={classes.root}>
        
         <Grid container spacing={2}>
@@ -46,7 +48,9 @@ const FooterBody = ({ data }) => {
         </Grid>
         </Grid>
       </div>
+      </footer>
     </div>
+    </>
   );
 };
 export default FooterBody;
