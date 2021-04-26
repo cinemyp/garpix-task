@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 const NavigationButtons = ({ menuItems }) => {
   return (
-    <div className={style["navigation_buttons"]}>
+    <div className={style["footer_body__buttons"]}>
       {menuItems.map((item, index) => (
         <NavigationButton key={index}>{item}</NavigationButton>
       ))}

@@ -1,4 +1,4 @@
-.footer_button__app {
+.footer_button__download {
     width: 120px;
     height: 30px;
     background-color: white;
@@ -7,9 +7,11 @@
     margin-right: 15px;
     margin-left: 5px;
   }
+
+
   .footer_body__buttons__second {
-    width: 845px;
+    min-width: 845px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 20px;
   }
