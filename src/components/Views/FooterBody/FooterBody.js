@@ -20,36 +20,32 @@ const FooterBody = ({ data }) => {
   const classes = useStyles();
   return (
     <>
-    <div className={style["footer_body"]}>
-      <footer>
-      <div className={classes.root}>
-       
-        <Grid container spacing={2}>
-          <Grid item xs={4}>
-            <FooterInfo />
-          </Grid>
-          <Grid item xs={12} sm container>
-          <Grid wrap="nowrap" item xs={8}>
-            <NavigationButtons menuItems={data} />
-          
-          
-         </Grid>
-        
-         <Grid item xs={9}>
-            <FooterButtons/>
-           
-          </Grid>
-      
-          <Grid wrap="nowrap" item xs={9}>
-              <Typography>
-                <FooterPrivacyPolicy />
-              </Typography>
+      <div className={style["footer_body"]}>
+        <footer>
+          <div className={classes.root}>
+            <Grid container spacing={2}>
+              <Grid item xs={4}>
+                <FooterInfo />
+              </Grid>
+              <Grid item xs={12} sm container>
+                <Grid wrap="nowrap" item xs={8}>
+                  <NavigationButtons menuItems={data} />
+                </Grid>
+
+                <Grid item xs={9}>
+                  <FooterButtons />
+                </Grid>
+
+                <Grid wrap="nowrap" item xs={9}>
+                  <Typography>
+                    <FooterPrivacyPolicy />
+                  </Typography>
+                </Grid>
+              </Grid>
             </Grid>
-        </Grid>
-        </Grid>
+          </div>
+        </footer>
       </div>
-      </footer>
-    </div>
     </>
   );
 };
