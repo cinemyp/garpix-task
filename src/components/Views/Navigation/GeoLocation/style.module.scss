@@ -13,5 +13,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }

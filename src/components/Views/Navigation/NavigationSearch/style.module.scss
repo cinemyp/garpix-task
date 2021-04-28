@@ -1,4 +1,7 @@
 .navigation_search {
   display: flex;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    flex-direction: row;
+  }
 }

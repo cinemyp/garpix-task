@@ -1,6 +1,6 @@
-const HeaderLogo = ({ logo }) => {
+const HeaderLogo = ({ logo, className }) => {
   return (
-    <div className="logo">
+    <div className={className}>
       <img src={logo} />
     </div>
   );

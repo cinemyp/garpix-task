@@ -1,7 +1,11 @@
 .navigation_buttons {
   text-align: left;
   margin-left: 35px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
+
 .footer_body__buttons {
   max-width: 900px;
   text-align: left;
