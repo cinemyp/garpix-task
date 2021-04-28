@@ -4,13 +4,11 @@
     height: 200px;
     border: 2px rgba(46, 46, 46, 0.767) dotted;
     border-radius: 10px;
-    .map_card:focus,
-    .map_card:hover,
-    .map_card:active {
-      border: 2px #00d36d solid;
-    }
+  
+    
     .map_card__logo {
-       // background-image: url(../logo/background_card.svg);
+      display:inline-block;
+        background-image: url(./asssets/logoBackgroundCard.svg);
         background-repeat: no-repeat;
         margin: 15px;
         display: flex;
@@ -20,40 +18,51 @@
             width: 25px;
             height: 25px;
           }
-      }
-      .map_card__body {
-        width: 300px;
-        text-align: left;
-        margin-left: 15px;
-        font-size: 16px;
-        
-      }
-      .map_card__body__metro {
-        display: flex;
-        justify-content: flex-start;
-        .div {
-            margin: 4px 5px 5px 5px;
+          .map_card__body {
+
+            display:inline-block;
+            width: 300px;
+            text-align: left;
+            margin-left: 15px;
+            font-size: 16px;
+            .map_card__body__metro {
+              display: flex;
+              justify-content: flex-start;
+              .div {
+                  margin: 4px 5px 5px 5px;
+                }
+            }
+            .map_card_body__adres {
+              display:inline-block;
+              font-size: 16px;
+              margin-bottom: 10px;
+              margin-top: 12px;
+              color: #00d36d;
+             
+              outline: none;
+              border: 0;
+              border-bottom: 1.5px solid #00d36d;
+              padding: 0px;
+            }
+            .map_body__marshrut {
+              display:inline-block;
+              margin-left: 170px;
+              margin-top: 18px;
+              color: #999999;
+              font-size: 12px;
+              outline: none;
+              border: 0;
+              border-bottom: 1.5px solid #999999;
+
+              padding: 0px;
+            }
+            :focus,
+            :hover
+            {
+              border: 2px #00d36d solid;
+            }
           }
+         
       }
-      .map_card_body__adres {
-        font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 12px;
-        color: #00d36d;
-        background-color: #e5e5e5;
-        outline: none;
-        border: 0;
-        border-bottom: 1.5px solid #00d36d;
-        padding: 0px;
-      }
-      .map_body__marshrut {
-        margin-left: 170px;
-        margin-top: 18px;
-        color: #999999;
-        background-color: #e5e5e5;
-        outline: none;
-        border: 0;
-        border-bottom: 1.5px solid #999999;
-        padding: 0px;
-      }
+    
   }

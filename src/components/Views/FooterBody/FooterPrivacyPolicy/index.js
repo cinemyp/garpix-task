@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./style.module.scss"
+
 const FooterPrivacyPolicy = () => {
   return (
     <div className={style["footer_body__policy"]}>

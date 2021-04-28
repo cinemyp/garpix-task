@@ -1,22 +1,18 @@
 import MapOblastCards from "./MapOblastCards";
 import style from "./style.module.scss";
-import AppleBigLogo from './assets/AppleBigLogo.svg'
-import HeaderTitle from "../HeaderTitle";
+import AppleBigLogo from "./assets/AppleBigLogo.svg";
+import DefaultTitle from "../DefaultTitle";
+import Map from "./Map";
 
-const MapOblast = ({
-  mapCardsData,
- 
-}) => {
+const MapOblast = ({ mapCardsData }) => {
   return (
-    <div className={style["ccontent_kupons"]}>
-        <div className={style["content_kupons__header"]}>
+    <div className={style["content_kupons"]}>
+      <div className={style["content_kupons__header"]}>
         <img src={AppleBigLogo} alt=""></img>
-      <HeaderTitle
-        className={style["content_kupons__header"]}
-        title={"Apple Music"}
-      />
+        <DefaultTitle className={style["map_logo_div"]} title={"Apple Music"} />
       </div>
       <MapOblastCards mapCardsData={mapCardsData} />
+      <Map />
     </div>
   );
 };

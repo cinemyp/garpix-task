@@ -4,14 +4,14 @@ import style from "./style.module.scss";
 const MapOblastCards = ({ mapCardsData}) => {
   return (
     <div className={style["map_kupons__cards"]}>
-      {mapCardsData.map(({AppleMusicLogo,
+      {mapCardsData.map(({logo,
       title,metro1,
       logoMetro1,metro2,
       logoMetro2,telefon,
       vremya,adress,marshrut }, idx) => (
         <MapOblastCard
           key={idx}
-          AppleMusicLogo={AppleMusicLogo}
+          logo={logo}
           title={title}
           logoMetro1={ logoMetro1}
           logoMetro2={ logoMetro2}

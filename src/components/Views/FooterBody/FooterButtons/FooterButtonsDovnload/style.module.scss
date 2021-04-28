@@ -6,12 +6,12 @@
     border: 0;
     margin-right: 15px;
     margin-left: 5px;
+    .footer_body__buttons__second {
+      min-width: 845px;
+      display: flex;
+      justify-content: left;
+      margin-top: 20px;
+    }
   }
 
 
-  .footer_body__buttons__second {
-    min-width: 845px;
-    display: flex;
-    justify-content: left;
-    margin-top: 20px;
-  }

@@ -1,8 +1,8 @@
-import { ReactComponent as FooterSberSVG } from "../../../assets/Sber.svg";
+import { ReactComponent as FooterSberSVG } from "../assets/Sber.svg"
 
 const FooterLogoSber = () => {
   return (
-    <div className="logo">
+    <div>
       <FooterSberSVG />
     </div>
   );

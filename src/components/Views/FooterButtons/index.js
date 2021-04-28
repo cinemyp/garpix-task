@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterButtonsDownload from '../FooterButtonsDovnload';
+import FooterButtonsDownload from '../../FooterButtonsDovnload';
 import FooterButtonsSocial from '../FooterButtonsSocial';
 
 const FooterButtons =()=>{
