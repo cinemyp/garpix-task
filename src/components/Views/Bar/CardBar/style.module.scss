@@ -1,9 +1,8 @@
 .content {
+  display: flex;
   position: relative;
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 0 5px;
+
   .content__logo {
     width: 120px;
     height: 120px;

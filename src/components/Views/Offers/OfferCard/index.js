@@ -3,9 +3,7 @@ import style from "./style.module.scss";
 const OfferCard = ({ photo, smallLogo, companyName, offer }) => {
   return (
     <div className={style["offer_card"]}>
-      <div className={style["img"]}>
-        <img src={photo} />
-      </div>
+      <img className={style["offer_card__image"]} src={photo} />
 
       <div className={style["desc"]}>
         <img className={style["desc__logo"]} src={smallLogo} />

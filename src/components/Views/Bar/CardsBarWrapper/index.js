@@ -1,9 +1,7 @@
+import style from "./style.module.scss";
+
 const CardsBarWrapper = ({ children }) => {
-  return (
-    <div style={{ display: "flex", justifyContent: "center", gap: "40px" }}>
-      {children}
-    </div>
-  );
+  return <div className={style["cards_bar_wrapper"]}>{children}</div>;
 };
 
 export default CardsBarWrapper;

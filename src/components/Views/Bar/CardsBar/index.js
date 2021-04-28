@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 
 const CardsBar = ({ cardBarData, description }) => {
   return (
-    <div className={style["cardbar"]}>
+    <div className={style["cardsbar"]}>
       <div className={style["content"]}>
         {cardBarData.map(({ logo, percent }, index) => (
           <CardBar logo={logo} percent={percent} key={index} />
