@@ -1,8 +1,4 @@
+@import "../../const.module.scss";
 .offers_cards {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  @extend %cards;
 }

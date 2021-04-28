@@ -1,5 +1,16 @@
 %layout {
-  background-color: #f2f4f7;
   margin: 0 auto;
   text-align: center;
+
+  background-color: #f2f4f7;
+  padding-top: 120px;
+}
+
+%cards {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
