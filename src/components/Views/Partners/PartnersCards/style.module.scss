@@ -1,8 +1,4 @@
+@import "../../const.module.scss";
 .partners_cards {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 1170px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  @extend %cards;
 }

@@ -2,10 +2,10 @@
 
 .partners {
   @extend %layout;
+  padding-top: 70px;
   .partners__header {
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 25px;
-    padding-top: 70px;
     font-weight: 500;
     font-size: 48px;
     line-height: 52px;
