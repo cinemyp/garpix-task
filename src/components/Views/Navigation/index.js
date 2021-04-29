@@ -24,7 +24,10 @@ const Navigation = ({
         toggleMenuMode={onToggleMenuMode}
       />
       <HeaderLogo className={style["navigation__logo"]} logo={sberLogoSvg} />
-      <NavigationButtons menuItems={data} />
+      <NavigationButtons
+        className={style["navigation__buttons"]}
+        menuItems={data}
+      />
       <NavigationSearch
         onClickSearch={onClickSearch}
         onSelectCity={onSelectCity}
