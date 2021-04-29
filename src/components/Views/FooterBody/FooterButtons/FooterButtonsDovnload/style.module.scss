@@ -1,17 +1,10 @@
-.footer_button__download {
-    width: 120px;
-    height: 30px;
+.footer_body__buttons__second {
+  display: flex;
+  gap: 10px;
+  .footer_button__download {
     background-color: white;
     outline: none;
     border: 0;
-    margin-right: 15px;
-    margin-left: 5px;
-    .footer_body__buttons__second {
-      min-width: 845px;
-      display: flex;
-      justify-content: left;
-      margin-top: 20px;
-    }
+    padding: 0;
   }
-
-
+}

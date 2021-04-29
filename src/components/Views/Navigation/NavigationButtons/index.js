@@ -1,10 +1,8 @@
 import NavigationButton from "../NavigationButton";
-import style from "./style.module.scss";
 
-const NavigationButtons = ({ menuItems }) => {
+const NavigationButtons = ({ className, menuItems }) => {
   return (
-    <nav className={style["navigation_buttons"]}>
-
+    <nav className={className}>
       {menuItems.map((item, index) => (
         <NavigationButton to={item.to} key={index}>
           {item.title}

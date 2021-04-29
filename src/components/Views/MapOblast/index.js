@@ -16,11 +16,8 @@ const MapOblast = ({ mapCardsData }) => {
           />
         </div>
         <MapOblastCards mapCardsData={mapCardsData} />
-        <Map />
+        <MyMap />
       </div>
-
-      <MapOblastCards mapCardsData={mapCardsData} />
-      <MyMap />
     </div>
   );
 };

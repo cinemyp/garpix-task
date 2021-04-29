@@ -17,4 +17,12 @@
       height: 40px;
     }
   }
+  .navigation__buttons {
+    text-align: left;
+    margin-left: 35px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
 }

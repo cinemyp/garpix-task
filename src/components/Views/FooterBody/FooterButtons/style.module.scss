@@ -1,6 +1,23 @@
-.footer_body__left {
-    width: 900px;
-    text-align: left;
-    margin-top: 40px;
+.footer_body_left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
-  
+  .footer_body__buttons {
+    text-align: left;
+    width: 90%;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
