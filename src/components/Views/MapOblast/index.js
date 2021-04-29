@@ -2,7 +2,7 @@ import MapOblastCards from "./MapOblastCards";
 import style from "./style.module.scss";
 import AppleBigLogo from "./assets/AppleBigLogo.svg";
 import DefaultTitle from "../DefaultTitle";
-import Map from "./Map";
+import MyMap from "./MyMap";
 
 const MapOblast = ({ mapCardsData }) => {
   return (
@@ -12,7 +12,7 @@ const MapOblast = ({ mapCardsData }) => {
         <DefaultTitle className={style["map_logo_div"]} title={"Apple Music"} />
       </div>
       <MapOblastCards mapCardsData={mapCardsData} />
-      <Map />
+      <MyMap/>
     </div>
   );
 };
