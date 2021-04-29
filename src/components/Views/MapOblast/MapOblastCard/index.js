@@ -16,21 +16,20 @@ const MapOblastCard = ({
     <div className={style["map_card"]}>
       <div className={style["map_card__logo"]}>
         <img className={style["img"]} src={logo} />
-        <div className={style["map_card__body"]}>
-          <div>
-            <div>{title}</div>
-            <div className={style["map_card__body__metro"]}>
-              <img src={logoMetro1} alt="kek" />
-              <div>{metro1}</div>
-              <img src={logoMetro2} alt="a tut lul" />
-              <div>{metro2}</div>
-            </div>
-            <div>{telefon}</div>
-            <div>{vremya}</div>
-            <p className={style["map_card_body__adres"]}>{adress}</p>
-          </div>
-          <p className={style["map_body__marshrut"]}>{marshrut}</p>
+      </div>
+      <div className={style["body"]}>
+        <span className={style["body__title"]}>{title}</span>
+        <div className={style["metro"]}>
+          <img src={logoMetro1} alt="kek" />
+          <div className={style["metro__name"]}>{metro1}</div>
+          <img src={logoMetro2} alt="a tut lul" />
+          <div className={style["metro__name"]}>{metro2}</div>
         </div>
+        <div className={style["body__telefon"]}>{telefon}</div>
+        <div className={style["body__vremya"]}>{vremya}</div>
+
+        <div className={style["body__adres"]}>{adress}</div>
+        <div className={style["body__marshrut"]}>{marshrut}</div>
       </div>
     </div>
   );

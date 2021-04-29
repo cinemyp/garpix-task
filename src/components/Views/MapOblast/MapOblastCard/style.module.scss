@@ -1,68 +1,53 @@
 .map_card {
-    margin: 0 auto;
-    width: 380px;
-    height: 200px;
-    border: 2px rgba(46, 46, 46, 0.767) dotted;
-    border-radius: 10px;
-  
-    
-    .map_card__logo {
-      display:inline-block;
-        background-image: url(./asssets/logoBackgroundCard.svg);
-        background-repeat: no-repeat;
-        margin: 15px;
-        display: flex;
-        justify-content: flex-start;
-        .img {
-            margin: 2.5px;
-            width: 25px;
-            height: 25px;
-          }
-          .map_card__body {
+  display: flex;
+  border: 2px rgba(46, 46, 46, 0.767) dotted;
+  border-radius: 10px;
+  padding: 15px;
+  flex-basis: 32%;
+  .map_card__logo {
+    display: inline-block;
+    background-image: url(./asssets/logoBackgroundCard.svg);
+    background-repeat: no-repeat;
 
-            display:inline-block;
-            width: 300px;
-            text-align: left;
-            margin-left: 15px;
-            font-size: 16px;
-            .map_card__body__metro {
-              display: flex;
-              justify-content: flex-start;
-              .div {
-                  margin: 4px 5px 5px 5px;
-                }
-            }
-            .map_card_body__adres {
-              display:inline-block;
-              font-size: 16px;
-              margin-bottom: 10px;
-              margin-top: 12px;
-              color: #00d36d;
-             
-              outline: none;
-              border: 0;
-              border-bottom: 1.5px solid #00d36d;
-              padding: 0px;
-            }
-            .map_body__marshrut {
-              display:inline-block;
-              margin-left: 170px;
-              margin-top: 18px;
-              color: #999999;
-              font-size: 12px;
-              outline: none;
-              border: 0;
-              border-bottom: 1.5px solid #999999;
-
-              padding: 0px;
-            }
-            :focus,
-            :hover
-            {
-              border: 2px #00d36d solid;
-            }
-          }
-         
-      }
-    
+    .img {
+      margin: 2.5px;
+      width: 25px;
+      height: 25px;
+    }
   }
+  .body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 16px;
+    .metro {
+      display: flex;
+      justify-content: flex-start;
+      .metro__name {
+        margin-right: 15px;
+      }
+    }
+
+    .body__adres {
+      color: #00d36d;
+      text-decoration: underline #00d36d80;
+    }
+    .body__marshrut {
+      color: #999999;
+      font-size: 12px;
+      text-decoration: underline #999;
+      margin-top: 12px;
+      align-self: flex-end;
+    }
+  }
+  &:focus,
+  &:hover {
+    border: 1px #00d36d solid;
+  }
+}
