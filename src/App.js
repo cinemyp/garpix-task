@@ -11,11 +11,8 @@ const App = () => {
       <Layout>
         <Route path="/404" component={NotFoundPage} />
         <Route path="/partners" component={PartnersPage} />
-<<<<<<< HEAD
+
         <Route path="/coupons" component={KuponsPage} />
-=======
-        <Route path="/coupons" component ={KuponsPage}/>
->>>>>>> a9c7b26d7638899ecaf9eb06e4f0a2d23da2abe8
       </Layout>
     </Switch>
   );
