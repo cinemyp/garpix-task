@@ -6,13 +6,18 @@ import Map from "./Map";
 
 const MapOblast = ({ mapCardsData }) => {
   return (
-    <div className={style["content_kupons"]}>
-      <div className={style["content_kupons__header"]}>
-        <img src={AppleBigLogo} alt=""></img>
-        <DefaultTitle className={style["map_logo_div"]} title={"Apple Music"} />
+    <div className={style["kupons"]}>
+      <div className={style["content"]}>
+        <div className={style["content_kupons__header"]}>
+          <img src={AppleBigLogo} alt=""></img>
+          <DefaultTitle
+            className={style["map_logo_div"]}
+            title={"Apple Music"}
+          />
+        </div>
+        <MapOblastCards mapCardsData={mapCardsData} />
+        <Map />
       </div>
-      <MapOblastCards mapCardsData={mapCardsData} />
-      <Map />
     </div>
   );
 };

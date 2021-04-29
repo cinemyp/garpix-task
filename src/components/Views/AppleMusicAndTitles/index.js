@@ -3,7 +3,12 @@ import style from "./style.module.scss";
 import AppleMusic from "./assets/AppleMusic.svg";
 import BigTextInstruction from "../BigTextInstruction";
 
-const AppleMusicAnfTitles = ({timeActsiya,count, listInstructions,listInstructions2}) => {
+const AppleMusicAnfTitles = ({
+  timeActsiya,
+  count,
+  listInstructions,
+  listInstructions2,
+}) => {
   return (
     <div className={style["content_kupons"]}>
       <div className={style["apple_kupons__top"]}>
@@ -18,20 +23,23 @@ const AppleMusicAnfTitles = ({timeActsiya,count, listInstructions,listInstructio
         title={"Apple Music за СПАСИБО"}
       />
       <div className={style["apple_kupons__body"]}>
-        <div className={style["apple_kupons__body__back"]}>
+        <div className={style["body_back__background"]}>
           <img src={AppleMusic} alt="piska"></img>
-          <div className={style["apple_kupons__body__bigtext"]}>
-        <HeaderTitle
-          className={style["apple_kupons__body__bigtext__timeacziya"]}
-          title={timeActsiya}
-        />
+        </div>
+        <div className={style["apple_kupons__body__bigtext"]}>
+          <HeaderTitle
+            className={style["apple_kupons__body__bigtext__timeacziya"]}
+            title={timeActsiya}
+          />
 
-          <BigTextInstruction count ={count} listInstructions={listInstructions} listInstructions2={listInstructions2} />
-        </div>   
-          </div>
+          <BigTextInstruction
+            count={count}
+            listInstructions={listInstructions}
+            listInstructions2={listInstructions2}
+          />
         </div>
       </div>
-    
+    </div>
   );
 };
 

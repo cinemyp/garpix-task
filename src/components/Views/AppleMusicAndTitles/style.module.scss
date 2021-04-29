@@ -2,34 +2,33 @@
 
 .content_kupons {
   @extend %layout;
-    background-color: #e5e5e5;
-    margin: 0 auto;
-    margin-top: 25px;
-    text-align: center;
-    width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 70px;
   .apple_kupons__top {
     margin: 0 auto;
-    padding-top: 70px;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 220px;
     .apple_kupons__header {
-      color: #a7a7a7;
-      background-color: #e5e5e5;
+      color: #7e7e7e;
+      font-style: normal;
+      font-weight: normal;
       outline: none;
       border: 0;
       border-bottom: 2px solid #c4c4c4;
       padding: 0px;
-      font-size: 10px;
+      font-size: 14px;
+      line-height: 20px;
     }
-    .apple_kupons__top__znak{
+    .apple_kupons__top__znak {
       color: #a7a7a7;
       font-size: 10px;
     }
   }
-  
-.content_kupons__title {
+
+  .content_kupons__title {
     margin-top: 20px;
     margin-bottom: 40px;
     font-size: 40px;
@@ -38,29 +37,34 @@
   }
   .apple_kupons__body {
     margin: 0 auto;
-    width: 1170px;
-    height: 1720px;
+    max-width: 1170px;
     border-radius: 30px;
     background-color: white;
-    .apple_kupons__body__back {
+    position: relative;
+    .body_back__background {
       background-image: url(./assets/background.svg);
-      height: 100%;
+      width: 100%;
+      height: 512px;
       background-repeat: no-repeat;
-      img {
-        margin: 0 auto;
-        margin-top: 45px;
-      }
     }
+    img {
+      margin: 0 auto;
+      margin-top: 45px;
+    }
+
     .apple_kupons__body__bigtext {
       margin: 0 auto;
-      margin-top: 50px;
     }
-    .apple_kupons__body__bigtext__timeacziya{
+    .apple_kupons__body__bigtext__timeacziya {
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-style: normal;
+      font-weight: 500;
       font-size: 20px;
-      color: #8d8d8d;
+      line-height: 36px;
+      color: #000000;
+
+      opacity: 0.5;
     }
-    
   }
- 
-  
 }

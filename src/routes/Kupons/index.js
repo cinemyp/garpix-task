@@ -1,11 +1,11 @@
 import BigTextContainer from "../../components/Containers/BigTextContainer";
-import MapElementsContainer from "../../components/Containers/MapElemenstsContainer"
+import MapElementsContainer from "../../components/Containers/MapElemenstsContainer";
 
 const KuponsPage = () => {
   return (
     <>
-    <BigTextContainer/>
-     <MapElementsContainer/>
+      <BigTextContainer />
+      <MapElementsContainer />
     </>
   );
 };
