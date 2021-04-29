@@ -2,7 +2,7 @@ import MapOblastCards from "./MapOblastCards";
 import style from "./style.module.scss";
 import AppleBigLogo from "./assets/AppleBigLogo.svg";
 import DefaultTitle from "../DefaultTitle";
-import Map from "./Map";
+import MyMap from "./MyMap";
 
 const MapOblast = ({ mapCardsData }) => {
   return (
@@ -18,6 +18,9 @@ const MapOblast = ({ mapCardsData }) => {
         <MapOblastCards mapCardsData={mapCardsData} />
         <Map />
       </div>
+
+      <MapOblastCards mapCardsData={mapCardsData} />
+      <MyMap />
     </div>
   );
 };
