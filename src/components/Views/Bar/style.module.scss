@@ -1,0 +1,5 @@
+@import "../const.module.scss";
+.bar {
+  @extend %layout;
+  padding-bottom: 170px;
+}

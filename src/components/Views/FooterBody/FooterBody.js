@@ -14,6 +14,7 @@ const FooterBody = ({ data }) => {
             <FooterInfo /> 
             <FooterButtons data={data}/>  
     </div>
+
     </>
   );
 };

@@ -1,14 +1,14 @@
 
 import FooterNavigationContainer from "../../Containers/FooterNavigationContainer";
 import NavigationContainer from "../../Containers/NavigationContainer";
- 
+
 const Layout = ({ children }) => {
   return (
     <>
       <NavigationContainer />
-      
+
       {children}
-      <FooterNavigationContainer/>
+      <FooterNavigationContainer />
     </>
   );
 };

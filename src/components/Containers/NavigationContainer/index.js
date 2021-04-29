@@ -14,6 +14,12 @@ const NavigationContainer = () => {
   const [openModal, setOpenModal] = useState(false);
   const city = "Санкт-Петербург";
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleToggleMenuMode = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
+
   return (
     <Navigation
       data={NAVIGATION_DATA}
@@ -21,7 +27,9 @@ const NavigationContainer = () => {
       onSelectCity={handleSelectCity}
       onCloseModal={handleCloseModal}
       city={city}
-      active={openModal}
+      isSearchMenuOpen={openModal}
+      isMenuOpen={isMenuOpen}
+      onToggleMenuMode={handleToggleMenuMode}
     />
   );
 };

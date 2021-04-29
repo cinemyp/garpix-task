@@ -1,4 +1,8 @@
 @import "../../const.module.scss";
-.offers_cards {
+
+.cards_bars {
   @extend %cards;
+  margin-top: 0;
+
+  gap: 40px;
 }

@@ -1,10 +1,10 @@
 import SearchInput from "../SearchInput";
 import Modal from "../../Modal";
 
-const SearchModal = ({ active, onCloseModal }) => {
+const SearchModal = ({ isSearchMenuOpen, onCloseModal }) => {
   return (
-    <Modal active={active} onCloseModal={onCloseModal}>
-      <SearchInput active={active} />
+    <Modal active={isSearchMenuOpen} onCloseModal={onCloseModal}>
+      <SearchInput active={isSearchMenuOpen} />
     </Modal>
   );
 };

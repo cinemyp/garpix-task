@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  width: 380px;
+  max-width: 380px;
   margin-top: 15px;
+
   .partners_checkbox__text {
     margin: 10px;
     font-size: 18px;
