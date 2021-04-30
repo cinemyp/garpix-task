@@ -1,11 +1,14 @@
 .map_kupons__cards {
   display: flex;
-  justify-content: center;
+  max-width:100%;
   margin-top: 50px;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center;
+
   @media (max-width: 768px) {
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
   }
 }

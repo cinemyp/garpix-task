@@ -38,6 +38,7 @@
     font-size: 18px;
     text-align: left;
     margin-top: 40px;
+    max-width: 940px;
     .bigtextinstruction_second__title {
       font-style: normal;
       font-weight: bold;
@@ -77,12 +78,17 @@
     }
 
     .bigtextinstruction_thrid__bigtext1 {
+      max-width: 970px;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 150%;
+      @media (max-width: 768px) {
+        text-align:justify;
+      }
     }
     .bigtextinstruction_thrid__bigtext2 {
+      max-width: 990px;
       margin-top: 65px;
       font-style: normal;
       font-weight: normal;

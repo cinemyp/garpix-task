@@ -12,6 +12,15 @@
     justify-content: space-around;
     text-align: center;
     .apple_kupons__header {
+      &::before {
+        content: "";
+        background: #000000;
+        width: 2px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: -6px;
+    }
       color: #7e7e7e;
       font-style: normal;
       font-weight: normal;
@@ -21,10 +30,6 @@
       padding: 0px;
       font-size: 14px;
       line-height: 20px;
-    }
-    .apple_kupons__top__znak {
-      color: #a7a7a7;
-      font-size: 10px;
     }
   }
 
@@ -36,22 +41,42 @@
     letter-spacing: 1px;
   }
   .apple_kupons__body {
+   display:flex;
+   flex-direction: column;
     margin: 0 auto;
     max-width: 1170px;
     border-radius: 30px;
     background-color: white;
     position: relative;
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+     margin: 0 12px;
+    
+    }
     .body_back__background {
-      background-image: url(./assets/background.svg);
-      width: 100%;
-      height: 512px;
+    display:flex;
+   // align-items: center;
+   
+   background: linear-gradient(
+    90deg
+    , #F76C55 0%, #DD599D 51.56%, #C250CD 100%);
+        border-radius: 30px;
+      max-width: 1170px;
+      padding-top: 40px;
+      padding-bottom: 30px;
       background-repeat: no-repeat;
-    }
-    img {
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      
+      }
+    
+    .body_back__background__image {
+      width: 70%;
       margin: 0 auto;
-      margin-top: 45px;
+   
+ 
     }
-
+  }
     .apple_kupons__body__bigtext {
       margin: 0 auto;
     }

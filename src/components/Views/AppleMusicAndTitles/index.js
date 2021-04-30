@@ -24,7 +24,7 @@ const AppleMusicAnfTitles = ({
       />
       <div className={style["apple_kupons__body"]}>
         <div className={style["body_back__background"]}>
-          <img src={AppleMusic} alt="piska"></img>
+          <img className={style["body_back__background__image"]} src={AppleMusic} alt="piska"></img>
         </div>
         <div className={style["apple_kupons__body__bigtext"]}>
           <HeaderTitle

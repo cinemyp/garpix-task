@@ -81,7 +81,7 @@ export const APPLENUSIC_DATA =[
     vremya:"Ежедневно с 9:00 до 21:00",
     adress:'apple.com',
     marshrut:'Проложить маршрут'
-
+  
   },
   {
     logo:AppleMusicLogo,
@@ -94,7 +94,7 @@ export const APPLENUSIC_DATA =[
     vremya:"Ежедневно с 9:00 до 21:00",
     adress:'apple.com',
     marshrut:'Проложить маршрут'
-
+  
   }
 ]
 

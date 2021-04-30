@@ -3,6 +3,10 @@
   flex-direction: column;
   margin-right: 100px;
   max-width: 240px;
+  @media (max-width: 768px) {
+    align-items: center;
+    margin-right: 0;
+  }
   .footer_info__logo {
     margin-top: 45px;
   }

@@ -2,6 +2,10 @@
   margin-top: 40px;
   font-size: 1rem;
   color: #a0a0a0;
+  @media (max-width:768px){
+    text-align:center;
+    max-width:300px;
+  }
  a
    {
     margin-top: 40px;

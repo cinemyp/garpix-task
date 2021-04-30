@@ -37,6 +37,9 @@
     .body__adres {
       color: #00d36d;
       text-decoration: underline #00d36d80;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .body__marshrut {
       color: #999999;
@@ -44,6 +47,9 @@
       text-decoration: underline #999;
       margin-top: 12px;
       align-self: flex-end;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   &:focus,
