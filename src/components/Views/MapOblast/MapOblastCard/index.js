@@ -30,7 +30,9 @@ const MapOblastCard = ({
         <div className={style["body__vremya"]}>{vremya}</div>
 
         <div className={style["body__adres"]}>{adress}</div>
-        <button onClick={() =>addRoute()} className={style["body__marshrut"]}>{marshrut}</button>
+        <button onClick={addRoute} className={style["body__marshrut"]}>
+          {marshrut}
+        </button>
       </div>
     </div>
   );

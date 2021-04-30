@@ -3,8 +3,10 @@ import style from "./style.module.scss";
 import AppleBigLogo from "./assets/AppleBigLogo.svg";
 import DefaultTitle from "../DefaultTitle";
 import MyMap from "./MyMap";
+import { useRef } from "react";
 
-const MapOblast = ({ mapCardsData,addRoute}) => {
+const MapOblast = ({ mapCardsData, addRoute }) => {
+  const myMap = useRef();
   return (
     <div className={style["kupons"]}>
       <div className={style["content"]}>
@@ -15,8 +17,8 @@ const MapOblast = ({ mapCardsData,addRoute}) => {
             title={"Apple Music"}
           />
         </div>
-        <MapOblastCards new addRoute={() => addRoute()} mapCardsData={mapCardsData} />
-        <MyMap/>
+        <MapOblastCards mapRef={myMap} mapCardsData={mapCardsData} />
+        <MyMap ref={myMap} />
       </div>
     </div>
   );

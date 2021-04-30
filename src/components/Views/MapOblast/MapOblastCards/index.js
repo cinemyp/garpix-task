@@ -1,29 +1,42 @@
 import MapOblastCard from "../MapOblastCard";
 import style from "./style.module.scss";
 
-const MapOblastCards = ({ addRoute,mapCardsData}) => {
+const MapOblastCards = ({ addRoute, mapCardsData, mapRef }) => {
+  console.log(mapRef.current.addRoute);
   return (
     <div className={style["map_kupons__cards"]}>
-      {mapCardsData.map(({logo,
-      title,metro1,
-      logoMetro1,metro2,
-      logoMetro2,telefon,
-      vremya,adress,marshrut }, idx) => (
-        <MapOblastCard
-          new ddRoute={() => addRoute()}
-          key={idx}
-          logo={logo}
-          title={title}
-          logoMetro1={ logoMetro1}
-          logoMetro2={ logoMetro2}
-          metro1={metro1}
-          metro2={metro2}
-          telefon={telefon}
-          vremya={vremya}
-          adress={adress}
-          marshrut={marshrut}
-        />
-      ))}
+      {mapCardsData.map(
+        (
+          {
+            logo,
+            title,
+            metro1,
+            logoMetro1,
+            metro2,
+            logoMetro2,
+            telefon,
+            vremya,
+            adress,
+            marshrut,
+          },
+          idx
+        ) => (
+          <MapOblastCard
+            addRoute={mapRef.current.addRoute}
+            key={idx}
+            logo={logo}
+            title={title}
+            logoMetro1={logoMetro1}
+            logoMetro2={logoMetro2}
+            metro1={metro1}
+            metro2={metro2}
+            telefon={telefon}
+            vremya={vremya}
+            adress={adress}
+            marshrut={marshrut}
+          />
+        )
+      )}
     </div>
   );
 };
