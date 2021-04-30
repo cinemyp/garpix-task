@@ -1,17 +1,18 @@
 import PartnerButton from "../PartnerButton";
 import style from "./style.module.scss";
 
-const PartnersButtons = ({ menuItems, onClickPartner, active }) => {
+const PartnersButtons = ({ menuItems, onClickPartner, filter }) => {
+  console.log(filter);
   return (
     <div className={style["partners_buttons"]}>
-      {menuItems.map((item, index) => (
+      {menuItems.map(({ value, title }, index) => (
         <PartnerButton
-          to={item.to}
+          value={value}
           key={index}
           onClickPartner={onClickPartner}
-          active={active}
+          active={filter === value}
         >
-          {item.title}
+          {title}
         </PartnerButton>
       ))}
     </div>

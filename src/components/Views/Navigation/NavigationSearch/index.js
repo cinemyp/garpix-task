@@ -3,16 +3,28 @@ import GeoLocation from "../GeoLocation";
 
 import style from "./style.module.scss";
 import { useStoreon } from "storeon/react";
+import CitySelection from "../CitySelection";
 
-const NavigationSearch = ({ onSelectCity, city }) => {
+const NavigationSearch = () => {
   const { dispatch } = useStoreon("isSearchMenuOpen");
+  const { isSelectorOpen, cityName } = useStoreon("isSelectorOpen", "cityName");
+
   const handleClickSearch = () => {
     dispatch("searchMenu/toggle");
   };
+  const handleClickSelectCity = () => {
+    dispatch("city/toggle");
+  };
   return (
     <div className={style["navigation_search"]}>
-      <GeoLocation onSelectCity={onSelectCity} city={city} />
+      <GeoLocation onSelectCity={handleClickSelectCity} city={cityName} />
       <NavigationMenu onClickSearch={handleClickSearch} />
+      <CitySelection
+        isSelectorOpen={isSelectorOpen}
+        city={cityName}
+        onClickAgree={handleClickSelectCity}
+        onClickChange={handleClickSelectCity}
+      />
     </div>
   );
 };

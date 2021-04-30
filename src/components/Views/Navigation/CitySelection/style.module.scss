@@ -1,0 +1,70 @@
+.city_selection {
+  opacity: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 1px rgb(0 0 0 / 10%);
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: -1;
+  .city_selection__city {
+    font-size: 16px;
+    line-height: 22px;
+    .city_selection__city--name {
+      font-weight: 500;
+    }
+  }
+  .city_selection__buttons {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    .city_selection__buttons--agree {
+      background-color: #00d36d;
+      border: 1px solid #00d36d;
+      color: white;
+      width: 90px;
+      height: 35px;
+      border-radius: 10px;
+      text-decoration: none;
+      outline: none;
+      transition: 0.2s;
+      &:hover {
+        background-color: #00a857;
+        cursor: pointer;
+      }
+    }
+    .city_selection__buttons--change {
+      background-color: white;
+      border: 1px solid #00d36d;
+      color: #00d36d;
+      height: 35px;
+      width: 130px;
+      border-radius: 10px;
+      text-decoration: none;
+      outline: none;
+
+      transition: 0.2s;
+      &:hover {
+        background-color: rgb(224, 224, 224);
+        cursor: pointer;
+      }
+    }
+  }
+  &.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  &::after {
+    bottom: 100%;
+    left: 80%;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border: 13px solid transparent;
+    border-bottom-color: #fff;
+    margin-left: -13px;
+  }
+}

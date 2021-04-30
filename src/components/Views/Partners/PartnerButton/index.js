@@ -3,14 +3,14 @@ import Button from "../../Button";
 
 import style from "./style.module.scss";
 
-const PartnerButton = ({ onClickPartner, active, children, to }) => {
+const PartnerButton = ({ onClickPartner, active, children, value }) => {
   return (
     <Button
       className={classNames(style["partner_button"], {
         [style["active"]]: active,
       })}
-      onClick={onClickPartner}
-      to={to}
+      onClick={() => onClickPartner(value)}
+      value={value}
     >
       {children}
     </Button>

@@ -4,16 +4,20 @@ import PartnersCards from "./PartnersCards";
 import PartnersCheckbox from "./PartnersCheckbox";
 import style from "./style.module.scss";
 import EtcButton from "../EtcButton";
+import { useStoreon } from "storeon/react";
 
 const Partners = ({
   menuItems,
-  onClickPartner,
-  active,
   partnersData,
   etcText,
   onClickEtc,
   activeEtc,
 }) => {
+  const { dispatch, filter } = useStoreon("filter");
+  const handleClickPartner = (newFilter) => {
+    dispatch("partnerFilter/update", newFilter);
+    console.log(filter);
+  };
   return (
     <div className={style["partners"]}>
       <HeaderTitle
@@ -22,8 +26,8 @@ const Partners = ({
       />
       <PartnersButtons
         menuItems={menuItems}
-        onClickPartner={onClickPartner}
-        active={active}
+        onClickPartner={handleClickPartner}
+        filter={filter}
       />
       <PartnersCheckbox />
       <PartnersCards partnersData={partnersData} />
