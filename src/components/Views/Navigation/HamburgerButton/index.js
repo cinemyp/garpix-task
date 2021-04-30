@@ -1,12 +1,14 @@
 import classNames from "classnames";
+import { useStoreon } from "storeon/react";
 
 import Button from "../../Button";
 
 import style from "./style.module.scss";
 
-const HamburgerButton = ({ isMenuOpen, toggleMenuMode }) => {
+const HamburgerButton = () => {
+  const { dispatch, isMenuOpen } = useStoreon("isMenuOpen");
   const handleClickMenu = () => {
-    toggleMenuMode();
+    dispatch("menu/toggle");
   };
 
   return (

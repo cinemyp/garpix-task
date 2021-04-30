@@ -10,13 +10,7 @@ const Modal = ({ active, onCloseModal, children }) => {
       })}
       onClick={(e) => onCloseModal(e)}
     >
-      <div
-        className={classNames(style["content"], {
-          [style["active"]]: active,
-        })}
-      >
-        {children}
-      </div>
+      {children}
     </div>
   );
 };
