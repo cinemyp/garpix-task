@@ -1,38 +1,57 @@
-.content__input {
-  visibility: hidden;
-  outline: none;
-  &.active {
-    visibility: visible;
-    display: block;
-    margin: 0 auto;
-    margin-right: 0px;
-    margin-top: 10px;
-    padding: 4px 0px 4px 4px;
-    width: 260px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    font-weight: 400;
-    font-size: 16px;
-    transition: 0.2s ease;
-    color: black;
+.search_input {
+  background-color: white;
+  height: 60px;
+  width: 340px;
+  right: 0;
+  margin-top: 55px;
+  position: fixed;
+  transition: 0.2s all;
+  display: flex;
+  justify-content: flex-start;
+  @media (max-width: 1024px) {
+    margin-top: 60px;
+    margin-right: 100px;
   }
-}
-.content__button {
-  visibility: hidden;
-  outline: none;
-  &.active {
-    visibility: visible;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+  }
+  .search_input__input {
+    visibility: hidden;
+    outline: none;
+    &.active {
+      visibility: visible;
+      display: block;
+      margin: 0 auto;
+      margin-right: 0px;
+      margin-top: 10px;
+      padding: 4px 0px 4px 4px;
+      width: 80%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      font-weight: 400;
+      font-size: 16px;
+      transition: 0.2s ease;
+      color: black;
+    }
+  }
+  .search_input__button {
+    visibility: hidden;
+    outline: none;
+    &.active {
+      visibility: visible;
 
-    margin: 0 auto;
-    margin-left: 0px;
-    margin-top: 10px;
-    padding: 7px 9px 4px 10px;
+      margin: 0 auto;
+      margin-left: 0px;
+      margin-top: 10px;
+      padding: 7px 9px 4px 10px;
 
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    transition: 0.2s ease;
-    background-color: white;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      transition: 0.2s ease;
+      background-color: white;
+    }
   }
 }

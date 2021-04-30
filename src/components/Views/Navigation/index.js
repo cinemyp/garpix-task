@@ -6,37 +6,23 @@ import sberLogoSvg from "./assets/sberLogo.svg";
 
 import style from "./style.module.scss";
 import HamburgerButton from "./HamburgerButton";
+import SideMenu from "./SideMenu";
 
-const Navigation = ({
-  data,
-  onClickSearch,
-  onSelectCity,
-  onCloseModal,
-  city,
-  isSearchMenuOpen,
-  isMenuOpen,
-  onToggleMenuMode,
-}) => {
+const Navigation = ({ data, onSelectCity, city }) => {
   return (
     <div className={style["navigation"]}>
-      <HamburgerButton
-        isMenuOpen={isMenuOpen}
-        toggleMenuMode={onToggleMenuMode}
-      />
-      <HeaderLogo className={style["navigation__logo"]} logo={sberLogoSvg} />
-      <NavigationButtons
-        className={style["navigation__buttons"]}
-        menuItems={data}
-      />
-      <NavigationSearch
-        onClickSearch={onClickSearch}
-        onSelectCity={onSelectCity}
-        city={city}
-      />
-      <SearchModal
-        isSearchMenuOpen={isSearchMenuOpen}
-        onCloseModal={onCloseModal}
-      />
+      <div className={style["header_top"]}>
+        <HamburgerButton />
+        <HeaderLogo className={style["header_top__logo"]} logo={sberLogoSvg} />
+        <NavigationButtons
+          className={style["header_top__buttons"]}
+          menuItems={data}
+        />
+        <NavigationSearch onSelectCity={onSelectCity} city={city} />
+      </div>
+
+      <SearchModal />
+      <SideMenu menuItems={data} />
     </div>
   );
 };
