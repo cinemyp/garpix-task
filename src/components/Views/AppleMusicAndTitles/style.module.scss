@@ -50,7 +50,8 @@
     position: relative;
     @media (max-width: 768px) {
       flex-basis: 100%;
-     margin: 0 12px;
+     margin: auto;//0 12px
+     padding:0;//0 16px
     
     }
     .body_back__background {
@@ -81,6 +82,8 @@
       margin: 0 auto;
     }
     .apple_kupons__body__bigtext__timeacziya {
+      display: flex;
+      justify-content:center;
       margin-top: 20px;
       margin-bottom: 0;
       font-style: normal;
@@ -88,8 +91,12 @@
       font-size: 20px;
       line-height: 36px;
       color: #000000;
-
       opacity: 0.5;
+      @media (max-width: 768px) {
+      justify-content:center;
+      width: 80%;
+        
+      }
     }
   }
 }

@@ -1,7 +1,15 @@
 .content {
   padding: 50px;
   padding-top: 40px;
-
+  @media (max-width: 768px) {
+   
+    padding: 0;
+    margin-left: 10px;
+  // max-width: 300px;
+   text-align: center;
+   justify-content: center;
+    
+  }
   .bigtextinstruction_first {
     text-align: left;
     font-style: normal;
@@ -14,6 +22,7 @@
       font-size: 18px;
       line-height: 150%;
       color: #000000;
+     
     }
     div {
       margin-bottom: 14px;
