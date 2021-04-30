@@ -1,7 +1,7 @@
 import MapOblastCard from "../MapOblastCard";
 import style from "./style.module.scss";
 
-const MapOblastCards = ({ mapCardsData}) => {
+const MapOblastCards = ({ addRoute,mapCardsData}) => {
   return (
     <div className={style["map_kupons__cards"]}>
       {mapCardsData.map(({logo,
@@ -10,6 +10,7 @@ const MapOblastCards = ({ mapCardsData}) => {
       logoMetro2,telefon,
       vremya,adress,marshrut }, idx) => (
         <MapOblastCard
+          new ddRoute={() => addRoute()}
           key={idx}
           logo={logo}
           title={title}

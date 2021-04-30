@@ -4,7 +4,7 @@ import AppleBigLogo from "./assets/AppleBigLogo.svg";
 import DefaultTitle from "../DefaultTitle";
 import MyMap from "./MyMap";
 
-const MapOblast = ({ mapCardsData }) => {
+const MapOblast = ({ mapCardsData,addRoute}) => {
   return (
     <div className={style["kupons"]}>
       <div className={style["content"]}>
@@ -15,8 +15,8 @@ const MapOblast = ({ mapCardsData }) => {
             title={"Apple Music"}
           />
         </div>
-        <MapOblastCards mapCardsData={mapCardsData} />
-        <MyMap />
+        <MapOblastCards new addRoute={() => addRoute()} mapCardsData={mapCardsData} />
+        <MyMap/>
       </div>
     </div>
   );

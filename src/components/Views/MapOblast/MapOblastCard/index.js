@@ -1,6 +1,7 @@
 import style from "./style.module.scss";
 
 const MapOblastCard = ({
+  addRoute,
   logo,
   title,
   metro1,
@@ -29,7 +30,7 @@ const MapOblastCard = ({
         <div className={style["body__vremya"]}>{vremya}</div>
 
         <div className={style["body__adres"]}>{adress}</div>
-        <div className={style["body__marshrut"]}>{marshrut}</div>
+        <button onClick={() =>addRoute()} className={style["body__marshrut"]}>{marshrut}</button>
       </div>
     </div>
   );
