@@ -5,7 +5,7 @@ import DefaultTitle from "../DefaultTitle";
 import MyMap from "./MyMap";
 import { useRef } from "react";
 
-const MapOblast = ({ mapCardsData, addRoute }) => {
+const MapOblast = ({ mapCardsData}) => {
   const myMap = useRef();
   return (
     <div className={style["kupons"]}>

@@ -71,7 +71,6 @@ class MyMap extends React.Component {
             addRoute={this.addRoute}
           />
         </YMaps>
-        <button onClick={this.addRoute}>Add route</button>
       </div>
     );
   }

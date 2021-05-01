@@ -1,8 +1,8 @@
 import MapOblastCard from "../MapOblastCard";
 import style from "./style.module.scss";
 
-const MapOblastCards = ({ addRoute, mapCardsData, mapRef }) => {
-  console.log(mapRef.current.addRoute);
+const MapOblastCards = ({ mapCardsData, mapRef }) => {
+  
   return (
     <div className={style["map_kupons__cards"]}>
       {mapCardsData.map(
@@ -22,7 +22,7 @@ const MapOblastCards = ({ addRoute, mapCardsData, mapRef }) => {
           idx
         ) => (
           <MapOblastCard
-            addRoute={mapRef.current.addRoute}
+            addRoute={()=>mapRef.current.addRoute()}
             key={idx}
             logo={logo}
             title={title}
